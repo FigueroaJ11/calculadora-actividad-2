@@ -1,0 +1,69 @@
+/* Estilos generales para todas las etiquetas (*) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/* Estilos para el cuerpo de la página */
+body {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #000, #00FF00, #000); /* Fondo con efecto neón */
+    display: grid;
+    place-items: center;
+    color: #ffffff; 
+    font-size: 24px;
+}
+/* Estilos para el contenedor de la calculadora */
+.calculadora {
+    background-color: rgba(6, 13, 5, 0.556);
+    color: white;
+    width: 350px;
+    max-width: 100%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5rem;
+}
+/* Estilos para la pantalla de la calculadora */
+.pantalla {
+    grid-column: 1 / -1;
+    background-color: #000000;
+    padding: 1.5rem;
+    font-size: 2rem;
+    text-align: right;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    font-family: monospace;
+    font-weight: 600;
+}
+/* Estilos para los botones de la calculadora */
+.btn {
+    background-color: #000000;;
+    color: white;
+    border: 0;
+    padding: 1.5rem .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+/* Estilos al pasar el cursor sobre los botones */
+.btn:hover {
+    background-color: #43e464;
+}
+/* Estilos específicos para el botón con id 'cero' */
+#cero {
+    grid-column: span 2;
+}
+/* Estilos específicos para el botón con id 'igual' */
+#igual {
+    grid-row: span 2;
+    background-color: #ff0303;
+}
+/* Estilos al pasar el cursor sobre el botón con id 'igual' */
+#igual:hover {
+    background-color: rgb(219, 39, 39)
+}
